@@ -1,0 +1,14 @@
+section{
+    /* background: linear-gradient(to bottom right, #c6f8ff70, #595cff70); */
+    /* background-color: #E6F4F1; */
+    color: black;
+    height: 8vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+}
+ h3{
+    font-size: 15px;
+    font-weight: 500;
+}

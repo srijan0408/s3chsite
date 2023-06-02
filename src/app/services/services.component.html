@@ -1,0 +1,78 @@
+<!-- <section>
+    <h2>Our <span id="red">Services </span></h2>
+    <h3>We Provide The Best <span id="blue">Services </span> With Our <span id="red">Tools </span></h3>
+    <div class="crds">
+        <div class="box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ut blanditiis consectetur doloribus
+                vel repellendus reiciendis harum facilis id nesciunt.
+            </p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-mobile"></i>
+            <h3>Mobile App Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ut blanditiis consectetur doloribus
+                vel repellendus reiciendis harum facilis id nesciunt.
+            </p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-users-gear"></i>
+            <h3>DevOps Solution</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ut blanditiis consectetur doloribus
+                vel repellendus reiciendis harum facilis id nesciunt.
+            </p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>Cloud Services</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ut blanditiis consectetur doloribus
+                vel repellendus reiciendis harum facilis id nesciunt.
+            </p>
+        </div>
+    </div>
+</section> -->
+<section>
+    <h1>Our Services</h1>
+    <div class="container">
+        <div class="left">
+            <div class="first">
+                <button (click)="toggleContent(1)" [ngClass]="{ 'selected': isContentVisible === 1}" class="content">
+                    <img src="assets\iconmobile.png" alt="App Dev"><br>
+                    Mobile App Development
+                </button>
+
+                <button (click)="toggleContent(2)" [ngClass]="{ 'selected': isContentVisible === 2}" class="content">
+                    <img src="assets\iconweb.png" alt="Web Dev"> <br>
+                    Web Development
+                </button>
+
+                <button (click)="toggleContent(3)" [ngClass]="{ 'selected': isContentVisible === 3}" class="content">
+                    <img src="assets\iconcloud.png" alt="Cloud"><br>
+                    Cloud Solution
+                </button>
+            </div>
+            <div class="second">
+                <button (click)="toggleContent(4)" [ngClass]="{ 'selected': isContentVisible === 4 }" class="content">
+                    <img src="assets\icondevops.png" alt="DevOps"><br>
+                    DevOps
+                </button>
+                <button (click)="toggleContent(5)" [ngClass]="{ 'selected': isContentVisible  === 5}" class="content">
+                    <img src="assets\icontrainer.png" alt="Training"><br>
+                    Technical Training
+                </button>
+                <button (click)="toggleContent(6)" [ngClass]="{ 'selected': isContentVisible === 6}" class="content">
+                    <img src="assets\icondigitalmarket.png" alt="Digital Market"><br>
+                    Digital Marketing
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="out">
+                <div class="border">
+                    <img [src]="imageUrl" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

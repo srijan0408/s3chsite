@@ -1,0 +1,123 @@
+.top{
+    text-align: center;
+    padding: 3rem;
+    animation: fade-in-bottom-animation 2s ease forwards;
+
+}
+@keyframes fade-in-bottom-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.box{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.top h2{
+    font-size: 38px;
+    /* background: linear-gradient(to top right, #2D2464, #8D7BC6, #FFA9C7); */
+    color:#8D7BC6;
+}
+.top .team{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+  
+}
+.top .team .left img{
+    width: 480px;
+    height: 380px;
+    border-radius: 30px 120px 60px 110px;
+    box-shadow:inset 3px 2px 8px rgba(0, 0, 0, 0.4);
+
+}
+.top .team .right{
+    width: 40%;
+}
+.top .team .right h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px;
+    color: #2D2464;
+}
+.top .team .right p{
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.bottom{
+    text-align: center;
+    padding:3rem;
+}
+.bottom h2{
+    font-size: 35px;
+    margin: 10px;
+    color:#8D7BC6;
+}
+.bottom h3{
+    font-size: 28px;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.bottom .imgcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    
+}
+.bottom .imgcontainer .imgbox {
+    height: 60vh;
+    width: 20%;
+    margin: 25px;
+    /* background-color: aqua; */
+}
+.bottom .imgcontainer .imgbox .img{
+    height: 280px;
+}
+.bottom .imgcontainer .imgbox img{
+    height: 250px;
+    width: 180px;
+    border-radius: 50%; 
+    box-shadow:3px 3px 8px rgba(0, 0, 0, 0.6) , inset 10px 2px 8px rgba(0, 0, 0, 0.4);
+ 
+}
+
+.bottom .imgcontainer .imgbox h2{
+    font-size: 28px;
+    font-weight: 500;
+    color: #8D7BC6;
+
+}
+.bottom .imgcontainer .imgbox h3{
+    font-size: 20px;
+    font-weight: 400;
+    /* color: #4065E6; */
+    
+}
+.bottom .box{
+    /* background-color: aqua; */
+    background: linear-gradient(to bottom ,#ffff, #c6f8ff95, #595cff58);
+}
+
+.top .box .border{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    width: 80%;
+    height: 1px;
+}
+
+
