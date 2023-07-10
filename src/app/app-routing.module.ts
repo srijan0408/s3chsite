@@ -9,10 +9,10 @@ import { TeamsComponent } from './teams/teams.component';
 
 const routes: Routes = [
   { component: HomeComponent, path: "" },
- 
   { component: ServicesComponent, path: "services" },
   { component: TeamsComponent, path: "team" },
-  { component: ContactusComponent, path: "contactus" }
+  { component: ContactusComponent, path: "contactus" },
+  {component:CourseComponent,path:"course"}
 
 
 

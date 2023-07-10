@@ -2,7 +2,7 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
-header{
+/* header{
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -19,28 +19,25 @@ header nav{
     justify-content: space-around;
 }
 header nav a{
-    /* transition: 0.2s ease-in; */
+ 
     color: #000;
-    /* background-color: aqua; */
-    /* width: 18%;
-    height: 30px;
-    padding: 3px; */
-    
 }
 
 /* header nav a.active {
     color: #DB6900; 
 
   } */
-.logo img{
+/* .logo img{
     height: 50px;
 }
 .logo p{
     margin-top :-13px;;
-}
+} */ 
 /* section{
     padding: 15px;
 } */
+
+
 
 footer{
     height: 17vh;

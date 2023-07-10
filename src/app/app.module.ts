@@ -7,10 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { CourseComponent } from './course/course.component';
 import { ContactusComponent } from './contactus/contactus.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FooterComponent } from './footer/footer.component';
-
+import { FormsModule } from '@angular/forms';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import { BlogComponent } from './blog/blog.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -21,14 +23,16 @@ import { FooterComponent } from './footer/footer.component';
     CourseComponent,
     ContactusComponent,
     FooterComponent,
+    BlogComponent,
+    HeaderComponent,
+
     
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    SlickCarouselModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

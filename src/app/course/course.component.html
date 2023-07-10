@@ -1,17 +1,83 @@
-<section>
-    <div class="heading">
-        <h2>Our <span id="red">Course</span></h2>
-        <h3>Empower Your <span id="red">Skills </span>With Our <span id="blue">Courses</span></h3>
+<section class="section">
+    <div class="left">
+        <h2>Learn With The best </h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, facere. Quas eos asperiores sequi hic fugiat
+            repellat laboriosam corrupti necessitatibus.
+        </h3>
+        <div class="btn">
+            <a href="https://www.youtube.com/@W3CloudHub" target="_blank"><button>YouTube</button></a>
+            <a href="https://www.udemy.com/user/vijay-251/" target="_blank"> <button>Udemy</button></a>
+        </div>
     </div>
-    <div class="topics">
-        <a routerLink="youtube" routerLinkActive="active">
-            <h3>Youtube</h3>
-        </a>
-        <a routerLink="udemy" routerLinkActive="active">
-            <h3>Udemy</h3>
-        </a>
+    <div class="right">
+        <img src="assets\Learn.png" alt="">
     </div>
 </section>
-<div class="courses">
-    <router-outlet></router-outlet>
-</div>
+<section class="course" id="course">
+    <h2>Our Courses</h2>
+    <div class="selectedCourse">
+        <button [ngClass]="{'active': selectedFilter === ''}" (click)="selectFilter('')">All</button>
+        <button [ngClass]="{'active': selectedFilter === 'youtube'}" (click)="selectFilter('youtube')">YouTube</button>
+        <button [ngClass]="{'active': selectedFilter === 'udemy'}" (click)="selectFilter('udemy')">Udemy</button>
+        <div *ngIf="selectedFilter === 'udemy'">
+            <button [ngClass]="{'active': subFilter === 'paid'}" (click)="selectSubFilter('paid')">Paid</button>
+            <button [ngClass]="{'active': subFilter === 'free'}" (click)="selectSubFilter('free')">Free</button>
+        </div>
+    </div>
+    <div class="videos">
+        <div *ngIf="selectedFilter === ''; else elseBlock">
+            <div class="videocontainer">
+                <div class="videoitems" *ngFor="let video of YtVideos" >
+                    <img src="{{video.thumbnail}}" alt="Video">
+                    <p id="smallheading">YouTube</p>
+                    <h2>{{video.title}}</h2>
+                    <!-- <p>{{video.des}}</p> -->
+                    <div class="bottom">
+                        <a href="{{video.link}}" target="_blank"><button>View Now</button></a>
+                        <p>{{video.type}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="videocontainer">
+                <div class="videoitems" *ngFor="let video of UVideos1" >
+                    <img src="{{video.thumbnail}}" alt="Video">
+                    <p id="smallheading">Udemy</p>
+                    <h2>{{video.title}}</h2>
+                    <!-- <p>{{video.des}}</p> -->
+                    <div class="bottom">
+                        <a href="{{video.link}}" target="_blank"><button>View Now</button></a>
+                        <p>{{video.type}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="videocontainer">
+                <div class="videoitems" *ngFor="let video of UVideos2" >
+                    <img src="{{video.thumbnail}}" alt="Video">
+                    <p id="smallheading">Udemy</p>
+                    <h2>{{video.title}}</h2>
+                    <!-- <p>{{video.des}}</p> -->
+                    <div class="bottom">
+                        <a href="{{video.link}}" target="_blank"><button>View Now</button></a>
+                        <p>{{video.type}}</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <ng-template #elseBlock>
+            <div class="videocontainer">
+                <div class="videoitems" *ngFor="let video of showVideos" >
+                    <img src="{{video.thumbnail}}" alt="Video">
+                    <p id="smallheading">{{video.plateform}}</p>
+                    <h2>{{video.title}}</h2>
+                    <!-- <p>{{video.des}}</p> -->
+                    <div class="bottom">
+                        <a href="{{video.link}}" target="_blank"><button>View Now</button></a>
+                        <p>{{video.type}}</p>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</section>

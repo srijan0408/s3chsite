@@ -1,9 +1,9 @@
 section{
     margin-top: 1rem;
-    background-color:aqua;
+    /* background-color:aqua; */
     background: linear-gradient(to bottom , #ffff ,#c6f8ff8f,#c6f8ff);
 
-    height: 90vh;
+    height: 100vh;
     /* margin: 1rem; */
 }
 section h2 {
@@ -16,7 +16,7 @@ section .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80vh;
+    height: auto
 }
 
 section .container .box1 {
@@ -26,7 +26,7 @@ section .container .box1 {
     justify-content: space-around;
     align-items: center;
     /* background-color: aqua; */
-    height: 80vh;
+    height: 90vh;
 }
 section .container .box1  h3{
     font-size: 15px;
@@ -43,7 +43,7 @@ section .container .box1 .contactinfo {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    height: auto;
 
 }
 
@@ -101,7 +101,7 @@ section .container .box1 .social a {
 
 section .container .box2 {
     /* background-color: aqua; */
-    width: 38%;
+    width: auto;
     height: 70vh;
 }
 
@@ -117,7 +117,11 @@ section .container .box2 .bgsection form {
     justify-content: space-around;
     align-items: center;
 }
-
+section .container .box2 .bgsection form h1{
+    font-size: 38px;
+    font-weight: 500;
+    color:#2D2464;
+}
 section .container .box2 .bgsection form .input input {
     width: 550px;
     height: 60px;
@@ -130,11 +134,25 @@ section .container .box2 .bgsection form .input input {
     border-bottom: 1px solid black;
     outline: none;
 }
+section .container .box2 .bgsection form textarea{
+    width: 550px;
+    background-color: transparent;
+    color: #2D2464;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+
 
 section .container .box2 .bgsection form .input input::placeholder {
     color: #2d24648f;
 }
-
+section .container .box2 .bgsection form textarea::placeholder {
+    color: #2d24648f;
+}
 section .container .box2 .bgsection .btn button {
     width: 150px;
     height: 40px;
@@ -148,7 +166,7 @@ section .container .box2 .bgsection .btn button {
     box-shadow: inset 3px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1200px){
     section h2 {
         font-size: 28px;
     }
@@ -167,7 +185,11 @@ section .container .box2 .bgsection .btn button {
         height: 40px;
         width: 70px;
     }
-    
+    section .container .box2 .bgsection form h1{
+        font-size: 28px;
+        font-weight: 500;
+        color:#2D2464;
+    }
     section .container .box1 .contactinfo .call img {
         height: 60px;
         width: 90px;
@@ -179,6 +201,256 @@ section .container .box2 .bgsection .btn button {
     }
     section .container .box1 .social a {
         font-size: 24px;
+    }
+
+
+    section .container .box2 {
+        /* background-color: aqua; */
+        width: auto;
+        height: 70vh;
+    }
+    
+    section .container .box2 .bgsection form {
+        /* background:linear-gradient(to bottom right,#E490EF,#FFA692,#FFCE6D); */
+        background: linear-gradient(to bottom right, #c6f8ff70, #595cff70);
+    
+        width: 100%;
+        height: 70vh;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    section .container .box2 .bgsection form .input input {
+        width: 450px;
+        height: 60px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: transparent;
+        color: #2D2464;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+    }
+    section .container .box2 .bgsection form textarea{
+        width: 450px;
+        
+    }
+    section .container .box2 .bgsection form .input input::placeholder {
+        color: #2d24648f;
+    }
+    
+    section .container .box2 .bgsection .btn button {
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 18px;
+        /* background-color: #7D9AFF; */
+        background:linear-gradient(to bottom right,#7D9AFF,#E490EF);
+    
+        color: aliceblue;
+        margin: 20px;
+        box-shadow: inset 3px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+@media (max-width: 985px){
+    section{
+        height: auto;
+    }
+    section .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        /* height: 80vh; */
+        height: auto;
+    }
+    section .container .box1 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: aqua; */
+        height: 80vh;
+        /* height: auto; */
+    }
+    
+
+    section .container .box2 {
+        /* background-color: aqua; */
+        width: 80%;
+        height: 70vh;
+    }
+    
+    section .container .box2 .bgsection form {
+        /* background:linear-gradient(to bottom right,#E490EF,#FFA692,#FFCE6D); */
+        background: linear-gradient(to bottom right, #c6f8ff70, #595cff70);
+    
+        width: 100%;
+        height: 70vh;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    section .container .box2 .bgsection form .input input {
+        width: 450px;
+        height: 60px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: transparent;
+        color: #2D2464;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+    }
+    
+    section .container .box2 .bgsection form .input input::placeholder {
+        color: #2d24648f;
+    }
+    
+    section .container .box2 .bgsection .btn button {
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 18px;
+        /* background-color: #7D9AFF; */
+        background:linear-gradient(to bottom right,#7D9AFF,#E490EF);
+    
+        color: aliceblue;
+        margin: 20px;
+        box-shadow: inset 3px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+@media (max-width: 590px){
+    
+
+    section .container .box2 {
+        /* background-color: aqua; */
+        width: 90%;
+        height: 70vh;
+    }
+    
+    section .container .box2 .bgsection form {
+        /* background:linear-gradient(to bottom right,#E490EF,#FFA692,#FFCE6D); */
+        background: linear-gradient(to bottom right, #c6f8ff70, #595cff70);
+        width: 100%;
+        height: 70vh;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    section .container .box2 .bgsection form .input input {
+        width: 380px;
+        height: 60px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: transparent;
+        color: #2D2464;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+    }
+    section .container .box2 .bgsection form textarea{
+        width: 380px;
+        
+    }
+    section .container .box2 .bgsection form .input input::placeholder {
+        color: #2d24648f;
+    }
+    
+    section .container .box2 .bgsection .btn button {
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 18px;
+        /* background-color: #7D9AFF; */
+        background:linear-gradient(to bottom right,#7D9AFF,#E490EF);
+    
+        color: aliceblue;
+        margin: 20px;
+        box-shadow: inset 3px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+@media (max-width: 470px){
+    section h2 {
+        text-align: center;
+        font-size: 25px;
+        color: #2D2464;
+    }
+    section .container .box1 {
+        height: auto;
+    }
+    section .container .box2 {
+        /* background-color: aqua; */
+        width: 90%;
+        height: 70vh;
+    }
+    
+    section .container .box2 .bgsection form {
+        /* background:linear-gradient(to bottom right,#E490EF,#FFA692,#FFCE6D); */
+        background: linear-gradient(to bottom right, #c6f8ff70, #595cff70);
+        width: 100%;
+        height: 70vh;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    section .container .box2 .bgsection form .input input {
+        width: 280px;
+        height: 60px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: transparent;
+        color: #2D2464;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+    }
+    section .container .box2 .bgsection form textarea{
+        width: 280px;
+        
+    }
+    section .container .box2 .bgsection form .input input::placeholder {
+        color: #2d24648f;
+    }
+    
+    section .container .box2 .bgsection .btn button {
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 18px;
+        /* background-color: #7D9AFF; */
+        background:linear-gradient(to bottom right,#7D9AFF,#E490EF);
+    
+        color: aliceblue;
+        margin: 20px;
+        box-shadow: inset 3px 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    section .container .box1 .contactinfo {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    
     }
     
 }
